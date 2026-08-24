@@ -2,8 +2,10 @@ package Entregable;
 
 public class TechSolutions {
 
-    public String imprimirEmpleados(){
-        
+    public static void imprimirEmpleados(Empleado[] e){
+        for(Empleado empleado : e){
+            System.out.println(empleado);
+        }
     }
 
     public static void main(String[] args) {
@@ -18,6 +20,7 @@ public class TechSolutions {
 
         gerente.setEmpleados(new Empleado[]{analista1, analista2, diseniador1, diseniador2});
 
-        Empleado[] empleados;
+        TechSolutions.imprimirEmpleados(new Empleado[]{gerente, analista1, analista2, diseniador1, diseniador2, desarrollador1, desarrollador2, desarrollador3});
+
     }
 }

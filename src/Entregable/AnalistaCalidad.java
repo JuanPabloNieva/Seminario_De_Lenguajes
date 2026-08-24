@@ -19,4 +19,9 @@ public class AnalistaCalidad extends Empleado{
     public boolean isPruebaAutomatizada(){
         return this.pruebaAutomatizada;
     }
+
+    @Override
+    public String toString() {
+        return "Analista: "+ this.getNombres() + this.getApellido() + this.pruebaAutomatizada ;
+    }
 }

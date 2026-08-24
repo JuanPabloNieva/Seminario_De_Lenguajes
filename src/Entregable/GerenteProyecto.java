@@ -20,4 +20,9 @@ public class GerenteProyecto extends Empleado{
     public void setEmpleados(Empleado[] empleados) {
         this.empleados = empleados;
     }
+
+    @Override
+    public String toString() {
+        return "GerenteProyecto {" + "empleados=" + empleados + '}';
+    }
 }

@@ -15,4 +15,9 @@ public class Desarrollador extends Empleado {
     public void setLenguaje(String lenguaje) {
         this.lenguaje = lenguaje;
     }
+
+    @Override
+    public String toString() {
+        return "Desarrollador: "+ this.getNombres() + this.getApellido() + this.lenguaje ;
+    }
 }

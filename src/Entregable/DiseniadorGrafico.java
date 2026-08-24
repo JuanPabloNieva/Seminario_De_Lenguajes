@@ -1,5 +1,7 @@
 package Entregable;
 
+import java.time.LocalDate;
+
 public class DiseniadorGrafico extends Empleado{
 
     private String especializacion;
@@ -25,5 +27,10 @@ public class DiseniadorGrafico extends Empleado{
 
     public void setUsaFigma(boolean usaFigma) {
         this.usaFigma = usaFigma;
+    }
+
+    @Override
+    public String toString() {
+        return "Diseñador: "+ this.getNombres() + this.getApellido() + this.getEspecializacion() ;
     }
 }
