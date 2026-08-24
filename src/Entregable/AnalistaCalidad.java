@@ -22,6 +22,6 @@ public class AnalistaCalidad extends Empleado{
 
     @Override
     public String toString() {
-        return "Analista: "+ this.getNombres() + this.getApellido() + this.pruebaAutomatizada ;
+        return "Analista: "+ this.getNombres() +" "+ this.getApellido() +" - Prueba automatizada? "+ this.pruebaAutomatizada ;
     }
 }

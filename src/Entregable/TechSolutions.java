@@ -16,9 +16,7 @@ public class TechSolutions {
         Desarrollador desarrollador1 = new Desarrollador("Juarez", "Pablo", "32232", "Java");
         Desarrollador desarrollador2 = new Desarrollador("Lapa", "Marcela", "34565", "Kotlin");
         Desarrollador desarrollador3 = new Desarrollador("Martinez", "Laureano", "16554", "C#");
-        GerenteProyecto gerente = new GerenteProyecto();
-
-        gerente.setEmpleados(new Empleado[]{analista1, analista2, diseniador1, diseniador2});
+        GerenteProyecto gerente = new GerenteProyecto("Altamiranda", "Milagros",new Empleado[]{analista1, analista2, diseniador1, diseniador2});
 
         TechSolutions.imprimirEmpleados(new Empleado[]{gerente, analista1, analista2, diseniador1, diseniador2, desarrollador1, desarrollador2, desarrollador3});
 

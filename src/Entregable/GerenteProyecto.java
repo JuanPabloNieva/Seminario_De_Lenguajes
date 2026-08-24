@@ -23,6 +23,6 @@ public class GerenteProyecto extends Empleado{
 
     @Override
     public String toString() {
-        return "GerenteProyecto {" + "empleados=" + empleados + '}';
+        return "GerenteProyecto: "+this.getNombres()+" "+this.getApellido()+" {" + "empleados=" + empleados.length + '}';
     }
 }

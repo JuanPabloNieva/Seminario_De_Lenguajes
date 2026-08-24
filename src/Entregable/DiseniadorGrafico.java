@@ -31,6 +31,6 @@ public class DiseniadorGrafico extends Empleado{
 
     @Override
     public String toString() {
-        return "Diseñador: "+ this.getNombres() + this.getApellido() + this.getEspecializacion() ;
+        return "Diseñador: "+ this.getNombres() +" "+this.getApellido() +" - Especialización: "+this.getEspecializacion() ;
     }
 }

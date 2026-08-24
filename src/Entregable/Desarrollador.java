@@ -18,6 +18,6 @@ public class Desarrollador extends Empleado {
 
     @Override
     public String toString() {
-        return "Desarrollador: "+ this.getNombres() + this.getApellido() + this.lenguaje ;
+        return "Desarrollador: "+ this.getNombres() +" "+ this.getApellido() +" - Lenguaje: "+ this.lenguaje ;
     }
 }
