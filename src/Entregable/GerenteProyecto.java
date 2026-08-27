@@ -2,13 +2,14 @@ package Entregable;
 
 import java.time.LocalDate;
 
-public class GerenteProyecto extends Empleado{
+public class GerenteProyecto extends Empleado {
 
     private Empleado[] empleados;
 
-    public GerenteProyecto(){}
+    public GerenteProyecto() {
+    }
 
-    public GerenteProyecto(String apellido, String nombres,  Empleado[] empleados){
+    public GerenteProyecto(String apellido, String nombres, Empleado[] empleados) {
         super(nombres, apellido);
         this.empleados = empleados;
     }
@@ -23,6 +24,10 @@ public class GerenteProyecto extends Empleado{
 
     @Override
     public String toString() {
-        return "GerenteProyecto: "+this.getNombres()+" "+this.getApellido()+" {" + "empleados=" + empleados.length + '}';
+        return "GerenteProyecto: " + this.getNombres() + " " + this.getApellido() + " {" + "Cantidad de empleados=" + empleados.length + '}';
+    }
+
+    public String exportarAString() {
+        return this.toString();
     }
 }

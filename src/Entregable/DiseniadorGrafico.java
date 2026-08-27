@@ -2,12 +2,12 @@ package Entregable;
 
 import java.time.LocalDate;
 
-public class DiseniadorGrafico extends Empleado{
+public class DiseniadorGrafico extends Empleado {
 
     private String especializacion;
     private boolean usaFigma;
 
-    public DiseniadorGrafico(String apellido, String nombres, String especializacion){
+    public DiseniadorGrafico(String apellido, String nombres, String especializacion) {
         super(apellido, nombres);
         this.especializacion = especializacion;
         this.usaFigma = false;
@@ -17,12 +17,12 @@ public class DiseniadorGrafico extends Empleado{
         return especializacion;
     }
 
-    public void setEspecializacion(String especializacion) {
-        this.especializacion = especializacion;
-    }
-
     public boolean isUsaFigma() {
         return usaFigma;
+    }
+
+    public void setEspecializacion(String especializacion) {
+        this.especializacion = especializacion;
     }
 
     public void setUsaFigma(boolean usaFigma) {
@@ -31,6 +31,10 @@ public class DiseniadorGrafico extends Empleado{
 
     @Override
     public String toString() {
-        return "Diseñador: "+ this.getNombres() +" "+this.getApellido() +" - Especialización: "+this.getEspecializacion() ;
+        return "Diseñador: " + this.getNombres() + " " + this.getApellido() + " - Especialización: " + this.getEspecializacion();
+    }
+
+    public String exportarAString() {
+        return this.toString();
     }
 }

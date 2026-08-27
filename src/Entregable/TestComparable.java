@@ -1,13 +1,10 @@
 package Entregable;
 
-public class TechSolutions {
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 
-    /*public static void imprimirEmpleados(Empleado[] e) {
-        for (Empleado empleado : e) {
-            System.out.println(empleado);
-        }
-    }*/
-
+public class TestComparable {
     public static void main(String[] args) {
         AnalistaCalidad analista1 = new AnalistaCalidad("Perez", "Jose", "14354", false);
         AnalistaCalidad analista2 = new AnalistaCalidad("Gonzalez", "Maria", "16554", true);
@@ -18,8 +15,23 @@ public class TechSolutions {
         Desarrollador desarrollador3 = new Desarrollador("Martinez", "Laureano", "16554", "C#");
         GerenteProyecto gerente = new GerenteProyecto("Altamiranda", "Milagros", new Empleado[]{analista1, analista2, diseniador1, diseniador2});
 
-        // TechSolutions.imprimirEmpleados(new Empleado[]{gerente, analista1, analista2, diseniador1, diseniador2, desarrollador1, desarrollador2, desarrollador3});
+        ArrayList<Empleado> listaEmpleados = new ArrayList<>();
+        listaEmpleados.add(analista1);
+        listaEmpleados.add(analista2);
+        listaEmpleados.add(diseniador1);
+        listaEmpleados.add(diseniador2);
+        listaEmpleados.add(desarrollador1);
+        listaEmpleados.add(desarrollador2);
+        listaEmpleados.add(desarrollador3);
+        listaEmpleados.add(gerente);
 
-        GeneradorDeReportes.imprimirObjetos(new Empleado[]{gerente, analista1, analista2, diseniador1, diseniador2, desarrollador1, desarrollador2, desarrollador3});
+        System.out.println("Lista desordenada:");
+        for (Empleado empleado : listaEmpleados) {
+            System.out.println(empleado);
+        }
+        System.out.println("");
+        Collections.sort(listaEmpleados);
+        System.out.println("Lista ordenada:");
+        GeneradorDeReportes.imprimirObjetos(listaEmpleados.toArray(new Exportable[0]));
     }
 }

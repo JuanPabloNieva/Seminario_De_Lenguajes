@@ -1,0 +1,11 @@
+PREGUNTA:
+
+De acuerdo a la solución que realizó en el inciso b), si se agregara otra clase de empleado,
+¿sería forzada a implementar los métodos exportarAString() y exportarAInteger()? Justifique
+
+RESPUESTA:
+
+Si se agrega otra clase de Empleado, sería forzada a implementar el método exportarAString() unicamente.
+Esto es porque, si bien la clase hereda de Empleado y ésta implementa una interfaz, la clase Empleado ya implementa el
+método exportarAInteger(), por lo que la única implementación que falta de forma obligatoria por parte de las subclases
+es exportarAString().
